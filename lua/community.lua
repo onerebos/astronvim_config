@@ -10,5 +10,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.recipes.vscode-icons" },
+  { import = "astrocommunity.game.leetcode-nvim" },
   -- import/override with your plugins folder
 }
