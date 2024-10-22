@@ -11,5 +11,6 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.recipes.vscode-icons" },
   { import = "astrocommunity.game.leetcode-nvim" },
+  { import = "astrocommunity.color.vim-highlighter" },
   -- import/override with your plugins folder
 }
