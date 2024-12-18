@@ -13,10 +13,10 @@ REMOTE_DATA_ROOT_DIR="/u/swzhang/nfs/sftp"
 # Display usage instructions
 function usage() {
     echo "Usage:"
-    echo "  $0 upload <local_file> <remote_directory>"
-    echo "  $0 download <remote_file> <local_directory>"
-    echo "  $0 list <remote_directory>"
-    echo "  $0 delete <remote_file>"
+    echo "  $0 u [upload] <local_file> <remote_directory>"
+    echo "  $0 d [download] <remote_file> <local_directory>"
+    echo "  $0 l [list] <remote_directory>"
+    echo "  $0 rm [delete] <remote_file>"
     echo "  $0 mkdir <remote_directory>"
     echo "  $0 rmdir <remote_directory>"
     exit 1
@@ -50,7 +50,7 @@ bye
 EOF
         ;;
 
-    "download")
+    "d")
         if [ "$#" -ne 3 ]; then
             usage
         fi
@@ -64,7 +64,7 @@ bye
 EOF
         ;;
 
-    "list")
+    "l")
         if [ "$#" -ne 2 ]; then
             usage
         fi
@@ -77,7 +77,7 @@ bye
 EOF
         ;;
 
-    "delete")
+    "rm")
         if [ "$#" -ne 2 ]; then
             usage
         fi
